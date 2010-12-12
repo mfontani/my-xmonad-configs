@@ -1,0 +1,8 @@
+my-xmonad-configs
+=================
+
+I use Xmonad as the tiling window manager on two
+of my machines.
+
+Each branch of this repository contains my specific
+configuration of Xmonad and/or other X bits and pieces.
