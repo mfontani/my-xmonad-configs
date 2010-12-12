@@ -1,0 +1,9 @@
+Ferus
+=====
+
+Ferus is a Dell mini 9, running Arch Linux.
+
+This is its xmonad + xinitrc configuration
+
+Use "make install" to use
+    "make update"  to copy the config on ~/ here
