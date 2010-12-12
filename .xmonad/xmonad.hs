@@ -8,7 +8,7 @@ import XMonad.Config.Xfce
 -- import XMonad.Config.Gnome
 -- }}}
 
-main = xmonad $ xfceConfig
+main = xmonad $ defaultConfig -- xfceConfig
         -- {{{ customizations of default configuration
         {   terminal = "terminator"   -- default terminal
             , modMask = mod4Mask      -- set the mod key to the windows key

@@ -15,18 +15,22 @@ syndaemon -t -k -i 2 -d &
 ## Set the default cursor
 xsetroot -cursor_name left_ptr
 
-## Start XFCE paneli and desktop
-xfce4-panel &
-xfdesktop &
-
-## Start the WICD daemon -- GTK variety -- which ends in the xfce4-panel
-wicd-gtk &
-
-## Start the quake-like terminal which is toggled via <F1>
-tilda &
+## Load background image
+/usr/bin/xloadimage -onroot $HOME/.xmonad/xmonad-1024x800.png
 
 ## Launch the xmonad session
-exec ck-launch-session xmonad
+#exec ck-launch-session xmonad
+exec xmonad
+
+## Start XFCE panels and desktop
+#xfce4-panel &
+#xfdesktop &
+
+## Start the WICD daemon -- GTK variety -- which ends in the xfce4-panel
+#wicd-gtk &
+
+## Start the quake-like terminal which is toggled via <F1>
+#tilda &
 
 ## Launch XFCE proper
 #exec ck-launch-session startxfce4
