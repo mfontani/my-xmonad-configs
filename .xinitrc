@@ -16,7 +16,11 @@ syndaemon -t -k -i 2 -d &
 xsetroot -cursor_name left_ptr
 
 ## Load background image
-/usr/bin/xloadimage -onroot $HOME/.xmonad/xmonad-1024x800.png
+#/usr/bin/xloadimage -onroot $HOME/.xmonad/xmonad-1024x800.png
+/usr/bin/xloadimage -onroot $HOME/.xmonad/sunspot_swedish_c1-1024x800.jpg
+
+## Load xmodmap (caps lock remapped to backspace);
+xmodmap -e ~/.Xmodmap
 
 ## Launch the xmonad session
 #exec ck-launch-session xmonad
