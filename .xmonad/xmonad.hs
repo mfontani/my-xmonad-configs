@@ -5,6 +5,7 @@
 import XMonad
 import XMonad.Util.EZConfig -- (additionalKeys)
 import XMonad.Config.Xfce
+import XMonad.Actions.UpdatePointer
 -- import XMonad.Config.Gnome
 -- }}}
 
@@ -14,6 +15,7 @@ main = xmonad $ defaultConfig -- xfceConfig
             , modMask = mod4Mask      -- set the mod key to the windows key
             , normalBorderColor  = "#032c18"
             , focusedBorderColor = "#076c3a"
+            , logHook = updatePointer (Relative 0.5 0.5) -- when tabbing, move mouse pointer to center of window
         }
         -- }}}
         -- {{{ Keys removed from default configuration
